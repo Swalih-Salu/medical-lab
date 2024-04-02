@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %} 
+    <!-- main content start -->
+    <div class="startbg" >
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 mt-5">
+                    <h1 class="text-white">
+                        NABL Accredited <br>Laboratory in Kochi
+                    </h1>
+                    <h5 class="text-white">
+                        Only 2% of the Labs in India are NABL Approved. We are one among them.
+                    </h5>
+                    <div class="d-flex">
+                        <div class="frstbtn">
+                            <a href="#" class="btn btn-outline-light ">
+                                About
+                            </a>
+                        </div>
+                        <div class="frstbtn">
+                            <a href="#" class="btn btn-warning text-white">
+                                Our Services
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 mt-5 frstform">
+                        <div class="form m-3"id="firstform">
+                            <h4 class="m-2">Book An Appointment</h4>
+                            <form  method="post" >
+                                {% csrf_token %}
+                            <input type="text" class="form-control form-control-lg m-2 mt-4" placeholder="Name" name="name">
+                            <input type="text" class="form-control form-control-lg m-2" placeholder="Mobile Number" name="number">
+                            <input type="text" class="form-control form-control-lg m-2 mb-4" placeholder="Locality,City" name="city">
+                            <input type="submit" class="btn btn-warning text-white m-2">
+                            </form>
+                        </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-3 border-end border-4 ">
+                    <h6 class="text-white">
+                        Support line
+                    </h6>
+                    <div class="row">
+                        <div class="col-lg-2"><i class="bi bi-telephone-fill me-1 h1 text-white"></i></div>
+                        <div class="col-lg"><h1 class="text-white">0484 2352357</h1></div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-white">
+                        Click here to
+                    </h6>
+                    <h1 class="text-white">
+                        <i class="bi bi-geo-alt-fill me-1"></i> Visit Us
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="welcome container  ">
+        <div class="row justify-content-center" >
+            <div class="col-lg-5 welcome-img ">
+                <!-- <img src="https://primedical.in/wp-content/uploads/2023/09/Prmedical-Diagnostics-Building-1024x682.jpg" alt="" width="70%"> -->
+            </div>
+            <div class="col-lg-5 welcome-text">
+                <h1 class="">
+                    Welcome to <br>
+                    Primedical Diagnostics
+                </h1>
+                <h5>
+                    Kochi’s Youngest NABL Accredited Laboratory
+                </h5>
+                <p class="mt-3">
+                    At Primedical Diagnostics, we stand at the forefront of cutting-edge medical diagnostics and compassionate patient care. With a commitment to precision, trust, and innovation, we have earned our place as Kochi’s Youngest NABL Accredited Lab, setting new standards in healthcare excellence.
+                </p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h6>NABL Accredited</h6>
+                        <p>In India's top 2%, NABL approval reflects quality, international standards, and precise results.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6>Technology and Expertise</h6>
+                        <p>We unite advanced technology, skilled technicians and compassion for accurate, timely results.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6>Comprehensive Care</h6>
+                        <p>From 3D ultrasounds to ECGs and Super specialty consultations complete our holistic approach to healthcare.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6>Journey of Excellence</h6>
+                        <p>4+ years of dedication, accurate diagnoses, patient-centric care, fostering trust and well-being in our community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="offering ">
+            <div class=" text-center ">
+                <h1>Our Offerings</h1>
+                <h4>Precision Health, Tailored for You.</h4>  
+            </div>
+            <div class="row offering-row">
+                <div class="col-lg or1">
+                    <h2>Diagnostic Services</h2>
+                    <h5>Discover precision diagnostics at Primedical. Our range includes 3D ultrasound scans, color Doppler tests, digital X-rays, ECGs, and more for accurate health insights.</h5>
+                    <div class="text-center">
+                        <button class="btn btn-light">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg or2">
+                    <h2>Health Checkup Packages</h2>
+                    <h5>Nurture well-being with our packages like Executive Health, Well Women, Well Men, Diabetic, Basic, and Cardiac Checkup. Comprehensive health views for a healthier you.</h5>
+                    <div class="text-center">
+                        <button class="btn btn-light">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg or3">
+                    <h2>Corporate Wellness Services</h2>
+                    <h5>Invest in employee health with our programs. Health assessments, consultations, and initiatives for a vibrant workplace.</h5>
+                    <div class="text-center">
+                        <button class="btn btn-light">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg or4">
+                    <h2>Specialty Doctor Consultations</h2>
+                    <h5>Expert care in Orthopedics, Gynecology, Cardiology, and more. Tailored guidance for specialized concerns, prioritizing your well-being.</h5>
+                    <div class="text-center">
+                        <button class="btn btn-light">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="people mt-5">  
+        <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-7">
+                <h2 class="people-text">
+                    "<br>
+                    Primedical's super specialty consultations have been a game-changer for me. From orthopedic concerns to expert cardiology advice, I've received personalized care that truly understands my needs. Trustworthy, efficient, and dedicated – that's Primedical
+                    Amit
+                    Entrepreneur
+                </h2>
+                <div class="people-name">
+                    <h5>Rajeesh</h5>
+                    <p>IT Professonal</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last-box mt-5">
+        <div class="container">
+            <div class="last-row-box">
+                <div class="row borderlast ">
+                
+                    <div class="col-lg-9">
+                        <h1>Experience exceptional care and
+                            precise imaging results.</h1>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="btn btn-success">Book an Appointment</button>
+                    </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- main content end -->
+
+    {% endblock  %}

@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %} 
+
+<div class="services-bg" >
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6 mt-5">
+                <h1 class="text-white">
+                    Immunology
+                </h1>
+                <h5 class="text-white">
+                    Pioneering Accurate Detection and Diagnosis Through State-of-the-Art Instruments, Expert Technicians, and NABL Accredited Infrastructure.
+                </h5>
+            </div>
+            <div class="col-lg-6 mt-5 frstform">
+                    <div class="form m-3"id="firstform">
+                        <h4 class="m-2">Book An Appointment</h4>
+                        <form  method="post" >
+                            {% csrf_token %}
+                        <input type="text" class="form-control form-control-lg m-2 mt-4" placeholder="Name" name="name">
+                        <input type="text" class="form-control form-control-lg m-2" placeholder="Mobile Number" name="number">
+                        <input type="text" class="form-control form-control-lg m-2 mb-4" placeholder="Locality,City" name="city">
+                        <input type="submit" class="btn btn-warning text-white m-2">
+                        </form>
+                    </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-3 border-end border-4 ">
+                <h6 class="text-white">
+                    Support line
+                </h6>
+                <div class="row">
+                    <div class="col-lg-2"><i class="bi bi-telephone-fill me-1 h1 text-white"></i></div>
+                    <div class="col-lg"><h1 class="text-white">0484 2352357</h1></div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3">
+                <h6 class="text-white">
+                    Click here to
+                </h6>
+                <h1 class="text-white">
+                    <i class="bi bi-geo-alt-fill me-1"></i> Visit Us
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="welcome container  ">
+    <div class="row justify-content-center" >
+        <div class="col-lg-6 welcome-text">
+            <h1 class="">
+                Immunology
+            </h1>
+            <h5>
+                Immunology is the study of the immune system, a complex network of cells, tissues, and molecules defending the body against infections and diseases. It explores immune responses, vaccination, and therapies, shaping our understanding of health and enabling the development of novel treatments.
+            </h5>
+            <p class="mt-3">
+                Immunology, a captivating scientific discipline, delves into the remarkable intricacies of the immune system—an ingenious network of cells, tissues, and molecules that serve as the body’s defense against pathogens and diseases.
+
+At its core, immunology seeks to unravel the mechanisms governing immune responses. It examines how the immune system identifies and neutralizes invading microbes while distinguishing them from healthy tissues. This understanding forms the basis for vaccination strategies, enabling us to prime the immune system to recognize and combat specific pathogens.
+
+Immunologists play a pivotal role in healthcare and research. They contribute to the development of vaccines, therapies, and treatments that bolster immunity and combat diseases ranging from infections to autoimmune disorders and cancers. Immunotherapy, a groundbreaking field within immunology, harnesses the power of the immune system to target and destroy malignant cells, revolutionizing cancer treatment.
+
+Moreover, immunology extends beyond disease defense. It illuminates the complex interactions between the immune system and various physiological processes, impacting fields like transplantation, allergy management, and even psychology through the emerging field of psychoneuroimmunology.
+
+In essence, immunology is central to our understanding of health and disease. It empowers us to bolster immunity, combat illnesses, and improve overall well-being, ushering in a future where our immune system is a potent ally in the fight for better health.
+            </p>
+            
+        </div>
+        <div class="col-lg-5 welcome-imgtele ">
+            
+        </div>
+    </div>
+</div>
+<div class="hcp-bg-last" >
+    <div class="container">
+        <div class="hcp-div">
+            <div class="row ">
+                <div class="col-lg-6 mt-5">
+                    <h1 class="text-white">
+                        Prioritize Your Health Today
+                    </h1>
+                    <h5 class="text-white">
+                        Invest in your well-being with Primedical’s Health Checkup Packages. Regular assessments are a powerful tool in ensuring a healthier, happier life.
+                    </h5>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-3 border-end border-4 ">
+                    <h6 class="text-white">
+                        Support line
+                    </h6>
+                    <div class="row">
+                        <div class="col-lg-2"><i class="bi bi-telephone-fill me-1 h1 text-white"></i></div>
+                        <div class="col-lg"><h1 class="text-white">0484 2352357</h1></div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-white">
+                        Click here to
+                    </h6>
+                    <h1 class="text-white">
+                        <i class="bi bi-geo-alt-fill me-1"></i> Visit Us
+                    </h1>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="container ">
+    <div class="offering ">
+        <div class=" text-center ">
+            <h1>Our Offerings</h1>
+            <h4>Precision Health, Tailored for You.</h4>  
+        </div>
+        <div class="row offering-row">
+            <div class="col-lg or1">
+                <h2>Diagnostic Services</h2>
+                <h5>Discover precision diagnostics at Primedical. Our range includes 3D ultrasound scans, color Doppler tests, digital X-rays, ECGs, and more for accurate health insights.</h5>
+                <div class="text-center">
+                    <button class="btn btn-light">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg or2">
+                <h2>Health Checkup Packages</h2>
+                <h5>Nurture well-being with our packages like Executive Health, Well Women, Well Men, Diabetic, Basic, and Cardiac Checkup. Comprehensive health views for a healthier you.</h5>
+                <div class="text-center">
+                    <button class="btn btn-light">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg or3">
+                <h2>Corporate Wellness Services</h2>
+                <h5>Invest in employee health with our programs. Health assessments, consultations, and initiatives for a vibrant workplace.</h5>
+                <div class="text-center">
+                    <button class="btn btn-light">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg or4">
+                <h2>Specialty Doctor Consultations</h2>
+                <h5>Expert care in Orthopedics, Gynecology, Cardiology, and more. Tailored guidance for specialized concerns, prioritizing your well-being.</h5>
+                <div class="text-center">
+                    <button class="btn btn-light">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="last-box mt-5">
+    <div class="container">
+        <div class="last-row-box">
+            <div class="row borderlast ">
+            
+                <div class="col-lg-9">
+                    <h1>Experience exceptional care and
+                        precise imaging results.</h1>
+                </div>
+                <div class="col-lg-3">
+                    <button class="btn btn-success">Book an Appointment</button>
+                </div>
+            
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}

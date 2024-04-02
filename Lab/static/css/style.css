@@ -1,0 +1,349 @@
+.topbg
+{
+    background-color: rgb(1, 108, 78);
+}
+.logo-bottom img
+{
+    width: 30%;
+}
+.navtxt
+{
+    font-size: large;
+}
+.navtxt a
+{
+    text-decoration: none;
+}
+.startbg
+{
+    height: 90vh;
+    /* background: url(https://www.crbgroup.com/wp-content/uploads/2020/04/Lab-Site-Selection-3840-x-1280-1920x640.jpg); */
+    /* background: url(https://apollouniversity.edu.in/blog/wp-content/uploads/2023/11/BSc-Medical-Laboratory-Technology.jpg); */
+    background: url(https://images6.alphacoders.com/134/1349907.jpeg);
+    background-size: cover;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.startbg h5,
+.startbg h6,
+.startbg h1
+{
+    font-family: cursive;
+    font-weight: bolder;
+}
+.btn
+{
+    border-radius: 30px;
+    padding: 15px 25px;
+}
+.frstbtn
+{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.frstform
+{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+.welcome-img
+{
+    background: url(https://primedical.in/wp-content/uploads/2023/09/Prmedical-Diagnostics-Building-1024x682.jpg);
+    height: 70vh;
+    width: 60vh;
+    background-size: cover;
+    border-radius: 25px;
+    margin-top: 80px;
+}
+.welcome
+{
+  margin-top: 10%;
+}
+.welcome-text h1
+{
+    font-family: cursive;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.welcome-text
+{
+    color: rgb(1, 108, 78);
+}
+.welcome-text h6
+{
+    font-weight: bolder;
+}
+.offering 
+{
+    margin-top: 10%;
+    color: rgb(1, 108, 78);
+}
+.offering h1
+{
+    font-family: cursive;
+    font-weight: bolder;
+}
+.offering h4
+{
+    font-family: cursive;
+}
+.offering-row .or1,
+.offering-row .or2,
+.offering-row .or3,
+.offering-row .or4
+{
+    border-radius: 30px;
+    padding: 40px;
+    margin: 10px;
+}
+.or1
+{
+    background: linear-gradient(rgb(225, 245, 146),rgb(130, 221, 162));
+}
+.or2
+{
+    background: linear-gradient(rgb(239, 217, 151),rgb(244, 168, 246));
+}
+.or3
+{
+    background: linear-gradient(rgb(170, 246, 244),rgb(162, 205, 241));
+}
+.or4
+{
+    background: linear-gradient(rgb(187, 185, 187),rgb(127, 126, 127));
+}
+.people
+{
+    height: 80vh;
+    background: url(https://primedical.in/wp-content/uploads/2023/05/hero_about.jpg);   
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+.people-text
+{
+    font-family: cursive;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+.people-name
+{
+    padding-left: 10%;
+    padding-top: 5%;
+    font-family: cursive;
+}
+.last-box
+{
+    background: wheat;
+}
+.last-row-box
+{
+    padding: 8% 5% ;
+}
+.borderlast
+{
+    border: 1px solid rgb(1, 108, 78);;
+    padding: 4%;
+    border-radius: 100px;
+    color: rgb(1, 108, 78);;
+}
+/* ---------teleradiology------------- */
+.tele-bg
+{
+    height: 110vh;
+    background: url(https://www.sciencefriday.com/wp-content/uploads/2023/10/MRI-scan-1.jpg);
+    background-size: cover;
+}
+.tele-bg h5,
+.tele-bg h6,
+.tele-bg h1
+{
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.welcome-imgtele
+{
+    background: url(https://media.licdn.com/dms/image/D4D12AQGGMY5BaNR70Q/article-cover_image-shrink_720_1280/0/1700473695883?e=2147483647&v=beta&t=ANYgS7T9PYCR-Z7gkRk4w7MkBdKErKrgbVoaDraO4Q8);
+    height: 70vh;
+    width: 60vh;
+    background-size: cover;
+    border-radius: 25px;
+    margin-top: 80px;
+}
+/* -------------------HCP------------------ */
+.hcp-bg
+{
+    height: 80vh;
+    background: url(https://media.istockphoto.com/id/1373659740/photo/shot-of-a-young-doctor-sharing-information-from-his-digital-tablet-with-an-older-patient.jpg?s=2048x2048&w=is&k=20&c=sCBed7h1k3Pefp_RMyQs3Wu7bGsdA41RTuoTLdObAM8=);
+    background-size: cover;
+}
+.hcp-bg h5,
+.hcp-bg h6,
+.hcp-bg h1
+{
+    padding-top: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hcp-div
+{
+    padding: 5%;
+}
+.welcome-imghcp
+{
+    background: url(https://media.gettyimages.com/id/1134458154/photo/doctor-and-patient-standing-face-to-face-in-medical-practice.jpg?s=612x612&w=0&k=20&c=48jPoM33Gx0YdLFzKiseMv3o_l4wyYpN0aENsuJtZX0=);
+    height: 70vh;
+    width: 60vh;
+    background-size: cover;
+    border-radius: 25px;
+    margin-top: 80px;
+}
+.icon-or
+{
+    justify-content: center;
+}
+.hcp-bg-last
+{
+    height: 80vh;
+    background: url(https://cdn-prod.medicalnewstoday.com/content/images/articles/321/321121/person-holding-someone-else-s-hand.jpg);
+    background-size: cover;
+}
+.hcp-bg-last h5,
+.hcp-bg-last h6,
+.hcp-bg-last h1
+{
+    padding-top: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* ---------------------doctor-con------------------ */
+.doc-bg
+{
+    height: 80vh;
+    background: url(https://media.licdn.com/dms/image/C4E12AQH7_fG8THP-XQ/article-cover_image-shrink_720_1280/0/1650105734036?e=2147483647&v=beta&t=imRb5qPbp2aX_B6OpU7KMb7TB192hxtsgwwvAKowRu8);
+    background-size: cover;
+}
+.doc-bg h5,
+.doc-bg h6,
+.doc-bg h1
+{
+    padding-top: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.doc-img
+{
+    background: url(https://media.istockphoto.com/id/492796499/photo/young-african-healthcare-worker-and-senior-patient.jpg?s=612x612&w=0&k=20&c=Ssj8lPrh9PSjgAFCXKQnUVSDbStAVXb9LT-osqD0upU=);
+    height: 60vh;
+    width: 60vh;
+    background-size: cover;
+    border-radius: 25px;
+    margin-top: 80px;
+}
+.doctors img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+.doctors h2,
+.doctors p
+{
+    color: rgb(1, 108, 78);
+    font-family: cursive;
+}
+/* ----------------gallery---------------- */
+.gallery-bg
+{
+    height: 80vh;
+    background: url(https://anthamgroup.com/wp-content/uploads/2017/09/moonstone14.jpg);
+    background-size: cover;
+}
+.gallery-bg h5,
+.gallery-bg h6,
+.gallery-bg h1
+{
+    padding-top: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.onam img
+{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 25px;
+}
+/* ------------- Partner with us --------------- */
+.pws-bg
+{
+    height: 80vh;
+    background: url(https://as2.ftcdn.net/v2/jpg/03/76/92/75/1000_F_376927551_2DeXHRqmPDURE8zpXD9l9Hn0XgKaY0JR.jpg);
+    background-size: cover;
+}
+.pws-bg h5,
+.pws-bg h6,
+.pws-bg h1
+{
+    padding-top: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.pws-bg-last
+{
+    height: 80vh;
+    background: url(https://www.ahu.edu/sites/default/files/styles/fc_800x533/public/media/healthcare-admin-doctor.jpg?h=f3b496f3&itok=a7EjJzgJ);
+    background-size: cover;
+}
+.pws-bg-last h5,
+.pws-bg-last h6,
+.pws-bg-last h1
+{
+    padding-top: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* ---------contact us -------- */
+.contact-bg
+{
+    height: 80vh;
+    background: url(https://primedical.in/wp-content/uploads/2023/05/hero_about.jpg);
+    background-size: cover;
+}
+.contact-bg h5,
+.contact-bg h6,
+.contact-bg h1
+{
+    padding-top: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.contact-map h1,
+.contact-map h5
+{
+    font-family: cursive;
+}
+/* ----------------services------------------ */
+.services-bg
+{
+    height: 80vh;
+    background: url(https://www.pdcenterlv.com/wp-content/uploads/2023/11/How-Accurate-Is-a-CT-Scan-for-Lung-Cancer.jpg);
+    background-size: cover;
+}
+.services-bg h5,
+.services-bg h6,
+.services-bg h1
+{
+    padding-top: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

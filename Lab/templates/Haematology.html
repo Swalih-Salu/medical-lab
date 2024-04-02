@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %} 
+
+<div class="services-bg" >
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6 mt-5">
+                <h1 class="text-white">
+                    Haematology
+                </h1>
+                <h5 class="text-white">
+                    Pioneering Accurate Detection and Diagnosis Through State-of-the-Art Instruments, Expert Technicians, and NABL Accredited Infrastructure.
+                </h5>
+            </div>
+            <div class="col-lg-6 mt-5 frstform">
+                    <div class="form m-3"id="firstform">
+                        <h4 class="m-2">Book An Appointment</h4>
+                        <form  method="post" >
+                            {% csrf_token %}
+                        <input type="text" class="form-control form-control-lg m-2 mt-4" placeholder="Name" name="name">
+                        <input type="text" class="form-control form-control-lg m-2" placeholder="Mobile Number" name="number">
+                        <input type="text" class="form-control form-control-lg m-2 mb-4" placeholder="Locality,City" name="city">
+                        <input type="submit" class="btn btn-warning text-white m-2">
+                        </form>
+                    </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-3 border-end border-4 ">
+                <h6 class="text-white">
+                    Support line
+                </h6>
+                <div class="row">
+                    <div class="col-lg-2"><i class="bi bi-telephone-fill me-1 h1 text-white"></i></div>
+                    <div class="col-lg"><h1 class="text-white">0484 2352357</h1></div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3">
+                <h6 class="text-white">
+                    Click here to
+                </h6>
+                <h1 class="text-white">
+                    <i class="bi bi-geo-alt-fill me-1"></i> Visit Us
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="welcome container  ">
+    <div class="row justify-content-center" >
+        <div class="col-lg-6 welcome-text">
+            <h1 class="">
+                Haematology
+            </h1>
+            <h5>
+                Haematology is the branch of medicine dedicated to the study and management of blood-related disorders. It encompasses the diagnosis and treatment of conditions such as anemia, leukemia, bleeding disorders, and blood cancers, playing a crucial role in maintaining overall health.            </h5>
+            <p class="mt-3">
+                Haematology, a vital field within the realm of medicine, focuses on the study and management of blood-related disorders. This multifaceted discipline plays a pivotal role in safeguarding health by scrutinizing the composition, function, and ailments associated with blood.
+
+                At its core, haematology delves into the intricacies of blood, encompassing red blood cells responsible for oxygen transport, white blood cells pivotal in immune defense, platelets crucial for clotting, and plasma housing essential proteins. Haematologists, skilled specialists in this field, diagnose and treat a spectrum of conditions, from the common, like anemia, to the complex, such as leukemia, bleeding disorders, and various blood cancers.
+                
+                The significance of haematology extends beyond diagnosis; it actively contributes to improving overall health. Through extensive research and innovative therapies, haematologists advance our understanding of blood disorders and develop cutting-edge treatments that enhance the quality of life for countless individuals.
+                
+                In essence, haematology is a pillar of modern medicine, addressing disorders that affect the very essence of life—the blood. With relentless dedication, haematologists strive to decipher the mysteries of blood-related conditions, offering hope, healing, and improved health to            </p>
+            
+        </div>
+        <div class="col-lg-5 welcome-imgtele ">
+            
+        </div>
+    </div>
+</div>
+<div class="hcp-bg-last" >
+    <div class="container">
+        <div class="hcp-div">
+            <div class="row ">
+                <div class="col-lg-6 mt-5">
+                    <h1 class="text-white">
+                        Prioritize Your Health Today
+                    </h1>
+                    <h5 class="text-white">
+                        Invest in your well-being with Primedical’s Health Checkup Packages. Regular assessments are a powerful tool in ensuring a healthier, happier life.
+                    </h5>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-3 border-end border-4 ">
+                    <h6 class="text-white">
+                        Support line
+                    </h6>
+                    <div class="row">
+                        <div class="col-lg-2"><i class="bi bi-telephone-fill me-1 h1 text-white"></i></div>
+                        <div class="col-lg"><h1 class="text-white">0484 2352357</h1></div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-white">
+                        Click here to
+                    </h6>
+                    <h1 class="text-white">
+                        <i class="bi bi-geo-alt-fill me-1"></i> Visit Us
+                    </h1>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="container ">
+    <div class="offering ">
+        <div class=" text-center ">
+            <h1>Our Offerings</h1>
+            <h4>Precision Health, Tailored for You.</h4>  
+        </div>
+        <div class="row offering-row">
+            <div class="col-lg or1">
+                <h2>Diagnostic Services</h2>
+                <h5>Discover precision diagnostics at Primedical. Our range includes 3D ultrasound scans, color Doppler tests, digital X-rays, ECGs, and more for accurate health insights.</h5>
+                <div class="text-center">
+                    <button class="btn btn-light">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg or2">
+                <h2>Health Checkup Packages</h2>
+                <h5>Nurture well-being with our packages like Executive Health, Well Women, Well Men, Diabetic, Basic, and Cardiac Checkup. Comprehensive health views for a healthier you.</h5>
+                <div class="text-center">
+                    <button class="btn btn-light">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg or3">
+                <h2>Corporate Wellness Services</h2>
+                <h5>Invest in employee health with our programs. Health assessments, consultations, and initiatives for a vibrant workplace.</h5>
+                <div class="text-center">
+                    <button class="btn btn-light">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg or4">
+                <h2>Specialty Doctor Consultations</h2>
+                <h5>Expert care in Orthopedics, Gynecology, Cardiology, and more. Tailored guidance for specialized concerns, prioritizing your well-being.</h5>
+                <div class="text-center">
+                    <button class="btn btn-light">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="last-box mt-5">
+    <div class="container">
+        <div class="last-row-box">
+            <div class="row borderlast ">
+            
+                <div class="col-lg-9">
+                    <h1>Experience exceptional care and
+                        precise imaging results.</h1>
+                </div>
+                <div class="col-lg-3">
+                    <button class="btn btn-success">Book an Appointment</button>
+                </div>
+            
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}
