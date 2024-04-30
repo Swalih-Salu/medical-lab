@@ -4,7 +4,7 @@
 }
 .logo-bottom img
 {
-    width: 30%;
+    width: 30vw;
 }
 .navtxt
 {
@@ -36,7 +36,7 @@
 .btn
 {
     border-radius: 30px;
-    padding: 15px 25px;
+    padding: 15px 20px;
 }
 .frstbtn
 {
@@ -346,4 +346,43 @@
     font-family: cursive;
     font-weight: bolder;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------------------------------------- */
+
+@media (max-width: 768px) {
+    .col-lg-2 {
+        width: 50%; /* Adjust column width for smaller screens */
+    }
+
+    .navtxt {
+        font-size: medium; /* Reduce font size on smaller screens */
+    }
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-lg-3 {
+    width: calc(25% - 20px); /* Adjust column width for a four-column layout */
+    margin: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .col-lg-3 {
+        width: 50%; /* Adjust column width for two-column layout on smaller screens */
+    }
+}
+
+body {
+    font-size: 16px; /* Base font size */
+}
+
+h1 {
+    font-size: 2rem; /* Responsive font size */
 }
