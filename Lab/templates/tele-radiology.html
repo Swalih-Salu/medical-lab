@@ -1,42 +1,44 @@
 {% extends "base.html" %}
 {% load static %}
 {% block body %} 
-<div class="tele-bg" >
+<div class="tele-bg">
     <div class="container">
-        <div class="row ">
+        <div class="row">
             <div class="col-lg-6 mt-5">
                 <h1 class="text-white">
                     Tele-radiology
                 </h1>
-                <h5 class="text-white mt-5" >
+                <h5 class="text-white mt-5">
                     Pioneering Accurate Detection and Diagnosis Through State-of-the-Art Instruments, Expert Technicians, and NABL Accredited Infrastructure.
                 </h5>
             </div>
             <div class="col-lg-4 mt-5 frstform ms-5">
-                    <div class="form m-3"id="firstform">
-                        <h4 class="m-2">Enquire Now</h4>
-                        <form  method="post" >
-                            {% csrf_token %}
-                        <input type="text" class="form-control form-control-lg m-2 mt-4" placeholder="Name" name="name">
-                        <input type="email" class="form-control form-control-lg m-2 mt-4" placeholder="Email" name="email">
-                        <input type="text" class="form-control form-control-lg m-2 mt-4" placeholder="Mobile Number" name="number">
-                        <input type="text" class="form-control form-control-lg m-2 mt-4" placeholder="Designation" name="designation">
-                        <input type="text" class="form-control form-control-lg m-2 mb-4 mt-4" placeholder="Locality,City" name="city">
+                <div class="form m-3" id="firstform">
+                    <h4 class="m-2">Enquire Now</h4>
+                    <form id="enquiryForm" method="post">
+                        {% csrf_token %}
+                        <div id="errorMessages" class="alert alert-danger d-none">
+                            <ul id="errorList"></ul>
+                        </div>
+                        <input type="text" class="form-control form-control-lg m-2 mt-4" placeholder="Name" name="name" id="name">
+                        <input type="email" class="form-control form-control-lg m-2 mt-4" placeholder="Email" name="email" id="email">
+                        <input type="text" class="form-control form-control-lg m-2 mt-4" placeholder="Mobile Number" name="number" id="number">
+                        <input type="text" class="form-control form-control-lg m-2 mt-4" placeholder="Designation" name="designation" id="designation">
+                        <input type="text" class="form-control form-control-lg m-2 mb-4 mt-4" placeholder="Locality, City" name="city" id="city">
                         <input type="submit" class="btn btn-warning text-white m-2">
-                        </form>
-                    </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="row ">
-            <div class="col-lg-3 border-end border-4 ">
+        <div class="row">
+            <div class="col-lg-3 border-end border-4">
                 <h6 class="text-white">
                     Book an appointment now!
                 </h6>
                 <div class="row">
                     <div class="col-lg-2"><i class="bi bi-telephone-fill me-1 h1 text-white"></i></div>
-                    <div class="col-lg"><h1 class="text-white"> 9048826786</h1></div>
+                    <div class="col-lg"><h1 class="text-white">9048826786</h1></div>
                 </div>
-                
             </div>
             <div class="col-lg-3">
                 <h6 class="text-white">
@@ -49,10 +51,10 @@
         </div>
     </div>
 </div>
-<div class="welcome container  ">
-    <div class="row justify-content-center" >
+<div class="welcome container">
+    <div class="row justify-content-center">
         <div class="col-lg-6 welcome-text">
-            <h1 class="">
+            <h1>
                 Tele-radiology
             </h1>
             <h5>
@@ -60,25 +62,19 @@
             </h5>
             <p class="mt-3">
                 Tele-radiology services represent a vital component of modern healthcare, leveraging advanced technology to bridge geographical gaps and enhance the accessibility of radiological expertise. This innovative approach involves the transmission of medical images, such as X-rays, CT scans, MRIs, and ultrasounds, to qualified radiologists who interpret and report on these images remotely. <br>
-
                 The process begins with healthcare facilities, including hospitals, clinics, and imaging centers, capturing medical images as part of a patient’s diagnostic evaluation. These images are then securely transmitted, often through encrypted channels, to off-site radiologists who specialize in various areas of medical imaging. <br>
-
                 Tele-radiologists utilize high-resolution displays and advanced software tools to analyze the images with precision and accuracy. They provide detailed reports that are promptly sent back to the referring healthcare facility, enabling timely diagnoses and treatment planning. <br>
-
                 The benefits of tele-radiology are manifold. It overcomes geographical barriers, ensuring that patients in underserved or remote areas have access to expert radiological interpretations. Additionally, it supports healthcare providers with fast turnaround times, especially in urgent cases, and enables the sharing of workload among radiologists across time zones. <br>
-
                 Tele-radiology services play a crucial role in improving patient care, reducing the time between image acquisition and diagnosis, and supporting clinical decision-making. They are particularly valuable in emergencies, where rapid access to radiological expertise can be life-saving, and in facilitating second opinions and subspecialty consultations. Overall, tele-radiology contributes to the efficient and effective delivery of healthcare services worldwide. <br>
             </p>
-            
         </div>
-        <div class="col-lg-5 welcome-imgtele ">
-            
+        <div class="col-lg-5 welcome-imgtele">
         </div>
     </div>
 </div>
-<div class="container ">
-    <div class="offering ">
-        <div class=" text-center ">
+<div class="container">
+    <div class="offering">
+        <div class="text-center">
             <h1>Our Offerings</h1>
             <h4>Precision Health, Tailored for You.</h4>  
         </div>
@@ -114,27 +110,57 @@
         </div>
     </div>
 </div>
-
 <div class="last-box mt-5">
     <div class="container">
         <div class="last-row-box">
-            <div class="row borderlast ">
-            
+            <div class="row borderlast">
                 <div class="col-lg-9">
-                    <h1>Experience exceptional care and
-                        precise imaging results.</h1>
+                    <h1>Experience exceptional care and precise imaging results.</h1>
                 </div>
                 <div class="col-lg-3">
                     <button class="btn btn-success">Book an Appointment</button>
                 </div>
-            
-        </div>
+            </div>
         </div>
     </div>
 </div>
 
+<script>
+document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+    var errors = [];
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var number = document.getElementById('number').value;
+    var designation = document.getElementById('designation').value;
+    var city = document.getElementById('city').value;
 
+    if (!name) {
+        errors.push("Name is required.");
+    }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        errors.push("A valid Email is required.");
+    }
+    if (!number || number.length !== 10 || !/^\d+$/.test(number)) {
+        errors.push("A valid 10-digit Mobile Number is required.");
+    }
+    if (!designation) {
+        errors.push("Designation is required.");
+    }
+    if (!city) {
+        errors.push("City is required.");
+    }
 
-
-
-{% endblock  %}
+    if (errors.length > 0) {
+        event.preventDefault();
+        var errorList = document.getElementById('errorList');
+        errorList.innerHTML = '';
+        errors.forEach(function(error) {
+            var li = document.createElement('li');
+            li.textContent = error;
+            errorList.appendChild(li);
+        });
+        document.getElementById('errorMessages').classList.remove('d-none');
+    }
+});
+</script>
+{% endblock %}
